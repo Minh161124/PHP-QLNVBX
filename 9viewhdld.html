@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Management</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 1200px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        h2 {
+            color: rgb(75, 147, 255);
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .flat-button {
+            background-color: #258eff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            padding: 12px 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .flat-button:hover {
+            background-color: #72e3ff;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #258eff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://png.pngtree.com/recommend-works/png-clipart/20241204/ourmid/pngtree-exit-button-game-ui-png-image_14585977.png" alt="Exit Icon">
+            <h2>CONTRACT MANAGEMENT</h2>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search Contract...">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+        </div>
+
+        <div class="button-group">
+            <button class="flat-button">CREATE CONTRACT</button>
+            <button class="flat-button">VIEW CONTRACT</button>
+            <button class="flat-button">DELETE CONTRACT</button>
+            <button class="flat-button">EDIT CONTRACT</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>MDH</th>
+                    <th>MNS</th>
+                    <th>LOAIHD</th>
+                    <th>VITRI</th>
+                    <th>NGAYKY</th>
+                    <th>NGAYKT</th>
+                    <th>THOIHANHD</th>
+                    <th>LUONGCB</th>
+                </tr>
+            </thead>
+        
+        </table>
+    </div>
+</body>
+</html>

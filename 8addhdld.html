@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #1e90ff;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .exit-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+        .exit-btn img {
+            width: 100px;
+            height: auto;
+        }
+        .create-btn { background-color: #1e90ff; color: white; }
+        .view-btn { background-color: #1e90ff; color: white; }
+        .sidebar button:hover {
+            opacity: 0.8;
+        }
+        .content {
+            width: 70%;
+            padding: 10px;
+            text-align: center;
+        }
+        .content h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <button class="exit-btn">
+                <img src="https://png.pngtree.com/recommend-works/png-clipart/20241204/ourmid/pngtree-exit-button-game-ui-png-image_14585977.png" alt="Exit">
+            </button>
+            <button class="create-btn">CREATE CONTRACT</button>
+            <button class="view-btn">VIEW CONTRACT</button>
+        </div>
+        <div class="content">
+            <h2>CONTRACT MANAGER</h2>
+            <div class="form-group">
+                <label>MHD:</label>
+                <input type="text"placeholder="Nhập mã hợp đồng">
+            </div>
+            <div class="form-group">
+                <label>MNS:</label>
+                <input type="text"placeholder="Nhập mã nhân sự">
+            </div>
+            <div class="form-group">
+                <label>LOẠI HỢP ĐỒNG:</label>
+                <input type="text"placeholder="Nhập loại hợp đồng">
+            </div>
+            <div class="form-group">
+                <label>VỊ TRÍ:</label>
+                <select>
+                    <option>Giám đốc</option>
+                    <option>Nhân viên</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>NGÀY KÝ:</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>NGÀY KT:</label>
+                <input type="date">
+            </div>
+            <div class="form-group">
+                <label>THỜI HẠN HD:</label>
+                <input type="text" placeholder="Nhập thời gian">
+            </div>
+            <div class="form-group">
+                <label>LUONGCB:</label>
+                <input type="number" step="0.01" placeholder="Nhập lương">
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
